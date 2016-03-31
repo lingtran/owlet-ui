@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Building an awesome Drag Drop Interface - by StackHive</title>
+    <meta name="description" content="Building a cross frame drag-drop interface using HTML5 for precise insertions">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="./assets/css/demointerface.css" rel="stylesheet">
+</head>
+<body>
+<div id="dragitemslist">
+    <h3>Lesson Planner</h3>
+    <div>
+        <ul id="dragitemslistcontainer">
+            <li draggable="true" data-insert-html="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"><i class="fa fa-header"></i><p>Text</p></li>
+            <li draggable="true" data-insert-html='<input type="file" placeholder="Paste an image url"><input type="submit" class="btn btn-success btn-login-submit" value="Upload"/><br><img src="http://blogs-images.forbes.com/anthonykosner/files/2014/06/us-browser-share-adobe-index-2014.jpg">'><i class="fa fa-bar-chart"></i><p>Image</p></li>
+            <li draggable="true" data-insert-html='<div class="well login-box"> <form action=""> <legend>Add Questions</legend> <div class="form-group"> <label for="username-email">Question 1:</label> <input value="" id="username-email" placeholder="What do all zebras have in common?" type="text" class="form-control"/> </div><div class="form-group"> <label for="password">Question 2:</label> <input id="password" value="" placeholder="Why is the sky blue?" type="text" class="form-control"/> </div><div class="form-group text-center"> <input type="submit" class="btn btn-success btn-login-submit" value="Add"/> </div></form> </div>'><i class="fa fa-sign-in"></i><p>Reflection</p></li>
+            <li draggable="true" data-insert-html='<div class="well login-box"> <form action=""> <legend>Add Questions</legend> <div class="form-group"> <label for="username-email">Question 1:</label> <input value="" id="username-email" placeholder="What do all zebras have in common?" type="text" class="form-control"/> <input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"> <input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"> <input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"> <input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"></div><div class="form-group"> <label for="password">Question 2:</label> <input id="password" value="" placeholder="Why is the sky blue?" type="text" class="form-control"/> <input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"><input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"><input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"><input type="radio"><input type="text" placeholder="Add answer" style="margin-left:10px;"></div><div class="form-group text-center"> <input type="submit" class="btn btn-success btn-login-submit" value="Add"/> </div></form> </div>'><i class="fa fa-sign-in"></i><p>Quiz</p></li>
+        </ul>
+    </div>
+</div>
+<div id="clientframe-container">
+    <iframe id="clientframe" src="./client.html" frameborder="0"></iframe>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="./assets/js/dnd.js"></script>
+</body>
+</html>
